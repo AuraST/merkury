@@ -3,119 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <title>Merkury</title>
 </head>
 <body>
-    <div>
-        <header>
-            <a>
-                <img>
+    <div class="top">
+        <header class="header">
+            <a class="header-logo">
+                <img class="header-logo__img" src="images/logo.png" alt="Logo company Merkury">
             </a>
-            <nav>
-                <ul>
-                    <li></li>
-                </ul>
+            <nav class="header-nav">
+                <a class="header-nav__link" href="#features">Features</a>
+                <a class="header-nav__link" href="#pricing">Pricing</a>
+                <a class="header-nav__link" href="#blog">Blog</a>
+                <a class="header-nav__link" href="#contact">Contact</a>
             </nav>
-            <button></button>
+            <button class="btn btn--primary-outline" type="button">Login</button>
         </header>
-        <section>
-            <h2></h2>
-            <p></p>
-            <a></a>
+        <section class="main">
+            <h2 class="main__title">Grow Your business with Merkury</h2>
+            <p class="main__subtitle">Your partner in crime!</p>
+            <a class="btn btn--primary" href="#features">Get started</a>
         </section>
     </div>
-    <section>
-        <div>
-            <p></p>
-            <p></p>
-            <a></a>
-        </div>
-        <div>
-            <p></p>
-            <p></p>
-            <a></a>
-        </div>
-        <div>
-            <p></p>
-            <p></p>
-            <a></a>
-        </div>
+
+    <section class="features" id="features">
+        <ul class="features-list">
+            <li class="features-item feature feature-icon feature-icon--tasks">
+                <p class="feature__title">Manage Your Workflow</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn btn--secondary" href="#">See more</a>
+            </li>
+            <li class="features-item feature feature-icon feature-icon--analytics">
+                <p class="feature__title">Analytics & Insights</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn btn--secondary" href="#">See more</a>
+            </li>
+            <li class="features-item feature feature-icon feature-icon--calendar">
+                <p class="feature__title">Organize Your Deadlines</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn btn--secondary" href="#">See more</a>
+            </li>
+        </ul>
     </section>
-    <section>
-        <div>
-            <h3></h3>
-            <p></p>
-            <p></p>
-            <ul>
-                <li></li>
+
+    <section class="info">
+        <div class="info-block">
+            <h3>All You need is a browser!</h3>
+            <p class="info-block__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="info-block__text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat.
+            </p>
+            <ul class="list">
+                <li>Lorem ipsum dolor sit amet consectetur</li>
+                <li>Ipsum dolor sit amet consectetur</li>
             </ul>
         </div>
-        <div></div>
+        <div class="info-image"></div>
     </section>
-    <section>
-        <div>
-            <img>
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
+
+    <section class="functions">
+        <div class="function">
+            <img class="function-image">
+            <div class="function-desc">
+                <p class="function-desc__title">Drag & Drop</p>
+                <p class="function-desc__text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                    ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="function-desc__text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                    ut aliquip ex ea commodo consequat.
+                </p>
             </div>
         </div>
-        <div>
-            <button></button>
-            <button></button>
+        <div class="functions-nav">
+            <button class="btn btn--arrow btn--arrow-left" aria-label="Back"></button>
+            <button class="btn btn--arrow btn--arrow-right" aria-label="Next"></button>
         </div>
     </section>
-    <section>
-        <h4></h4>
-        <p></p>
-        <div>
-            <div>
-                <p></p>
-                <p></p>
+
+    <section class="template">
+        <h4 class="template-title">Powerfull PSD Template</h4>
+        <p class="template-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="template-mockup">
+            <div class="template-mockup__reason reason-mockup reason-mockup--left">
+                <p class="reason-mockup__title">Clean & modern layout</p>
+                <p class="reason-mockup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
             </div>
-            <div>
-                <p></p>
-                <p></p>
+            <div class="template-mockup__reason reason-mockup reason-mockup--right">
+                <p class="reason-mockup__title">Clean & modern layout</p>
+                <p class="reason-mockup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
             </div>
         </div>
     </section>
-    <section>
-        <h5></h5>
-        <div>
-            <div>
-                <p></p>
-                <p> <span></span></p>
-                <ul>
-                    <li></li>
+
+    <section class="price">
+        <h5 class="price-title">Check our pricing!</h5>
+        <ul class="price-list">
+            <li class="price-item">
+                <p class="price-item__title">Bronze plan</p>
+                <p class="price-item__count">$19 <span class="price-item__unit">/mon</span></p>
+                <ul class="list">
+                    <li>Lorem ipsum dolor sit am</li>
+                    <li>Lorem ipsum dolor sit am</li>
+                    <li class="uncheck">Lorem ipsum dolor sit am</li>
+                    <li class="uncheck">Lorem ipsum dolor sit am</li>
                 </ul>
-            </div>
-            <div>
-                <p></p>
-                <p> <span></span></p>
-                <ul>
-                    <li></li>
+            </li>
+            <li class="price-item">
+                <p class="price-item__title">Silver plan</p>
+                <p class="price-item__count">$49 <span class="price-item__unit">/mon</span></p>
+                <ul class="list">
+                    <li>Lorem ipsum dolor sit am</li>
+                    <li>Lorem ipsum dolor sit am</li>
+                    <li>Lorem ipsum dolor sit am</li>
+                    <li class="uncheck">Lorem ipsum dolor sit am</li>
                 </ul>
-            </div>
-            <div>
-                <p></p>
-                <p> <span></span></p>
-                <ul>
-                    <li></li>
+            </li>
+            <li class="price-item">
+                <p class="price-item__title">Gold plan</p>
+                <p class="price-item__count">$99 <span class="price-item__unit">/mon</span></p>
+                <ul class="list">
+                    <li>Lorem ipsum dolor sit am</li>
+                    <li>Lorem ipsum dolor sit am</li>
+                    <li>Lorem ipsum dolor sit am</li>
+                    <li>Lorem ipsum dolor sit am</li>
                 </ul>
-            </div>
-        </div>
-        <p></p>
-        <a></a>
+            </li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a class="btn btn--primary" href="#">Join now</a>
     </section>
-    <footer>
-        <p></p>
+    <footer class="footer">
+        <p class="footer-copyright">© 2016 Merkury All Right Reserved</p>
         <div>
-            <ul>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
+            <nav class="footer-nav">
+                <a class="footer-nav__link" href="#">Pricing</a>
+                <a class="footer-nav__link" href="#">Blog</a>
+                <a class="footer-nav__link" href="#">Contact</a>
+            </nav>
+            <ul class="socials">
+                <li class="social">
+                    <a class="social__link social__link--facebook" href="#" alt="Facebook"></a>
+                </li>
+                <li class="social">
+                    <a class="social__link social__link--twitter" href="#" alt="Twitter"></a>
+                </li>
+                <li class="social">
+                    <a class="social__link social__link--google" href="#" alt="Google+"></a>
+                </li>
             </ul>
         </div>
     </footer>
