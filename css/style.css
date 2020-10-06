@@ -1,0 +1,174 @@
+:root {
+    --blue: #5584ff;
+    --white: #ffffff;
+    --gray: #8492af;
+    --dark-blue: #0e1a35;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.btn--primary-outline {
+    color: var(--blue);
+    background-color: transparent;
+}
+
+.btn--primary {
+    color: var(--white);
+    background-color: var(--white);
+}
+
+.btn--secondary {
+    color: var(--dark-blue);
+    background-color: transparent;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 100;
+    color: var(--dark-blue);
+}
+
+.list {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.list > li {
+    position: relative;
+}
+
+.list > li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon_check.svg);
+    background-repeat: no-repeat;
+}
+
+.list > .uncheck::before {
+    background-image: url(../images/icon_uncheck.svg);
+}
+
+.top {
+    background-color: var(--dark-blue);
+    background-image: url(../images/top_graph_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-screen {
+    background-image: url(../images/merkury_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-nav .header-nav__link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.main__title {
+    color: var(--white);
+}
+
+.main__subtitle {
+    font-size: 36px;
+    color: var(--white);
+}
+
+.features-item .feature__title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.features-item .feature__text {
+    color: var(--gray);
+}
+
+.feature-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.feature-icon--tasks {
+    background-image: url(../images/icon_tasks.svg);
+}
+
+.feature-icon--analytics {
+    background-image: url(../images/icon_analytics.svg);
+}
+
+.feature-icon--calendar {
+    background-image: url(../images/icon_calendar.svg);
+}
+
+.info-block__list > li {
+    font-size: 22px;
+    color: var(--blue);
+}
+
+.info-block__list > li::before {
+    width: 28px;
+    height: 28px;
+}
+
+.functions {
+    background-color: var(--dark-blue);
+    background-image: url(../images/top_graph_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.function .function-desc__title {
+    color: var(--white);
+}
+
+.template-mockup {
+    background-image: url(../images/screen_mockup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.template-mockup__reason .reason-mockup__title {
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.price-item .price-item__title {
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+}
+
+.price-item .price-item__count {
+    font-size: 72px;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.price-item__count .price-item__unit {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.footer {
+    background-color: var(--dark-blue);
+}
+
+.footer-nav .footer-nav__link {
+    color: var(--gray);
+    text-decoration: none;
+}

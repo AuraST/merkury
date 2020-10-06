@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Merkury</title>
 </head>
 <body>
@@ -21,17 +23,18 @@
             <button class="btn btn--primary-outline" type="button">Login</button>
         </header>
         <section class="main">
-            <h2 class="main__title">Grow Your business with Merkury</h2>
+            <h2 class="title main__title">Grow Your business with Merkury</h2>
             <p class="main__subtitle">Your partner in crime!</p>
             <a class="btn btn--primary" href="#features">Get started</a>
         </section>
+        <div class="top-screen"></div>
     </div>
 
     <section class="features" id="features">
         <ul class="features-list">
             <li class="features-item feature feature-icon feature-icon--tasks">
                 <p class="feature__title">Manage Your Workflow</p>
-                <p>
+                <p class="feature__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -39,7 +42,7 @@
             </li>
             <li class="features-item feature feature-icon feature-icon--analytics">
                 <p class="feature__title">Analytics & Insights</p>
-                <p>
+                <p class="feature__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -47,7 +50,7 @@
             </li>
             <li class="features-item feature feature-icon feature-icon--calendar">
                 <p class="feature__title">Organize Your Deadlines</p>
-                <p>
+                <p class="feature__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -58,7 +61,7 @@
 
     <section class="info">
         <div class="info-block">
-            <h3>All You need is a browser!</h3>
+            <h3 class="title">All You need is a browser!</h3>
             <p class="info-block__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -67,19 +70,21 @@
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
                 ut aliquip ex ea commodo consequat.
             </p>
-            <ul class="list">
+            <ul class="list info-block__list">
                 <li>Lorem ipsum dolor sit amet consectetur</li>
                 <li>Ipsum dolor sit amet consectetur</li>
             </ul>
         </div>
-        <div class="info-image"></div>
+        <div class="info-image">
+            <img src="images/merkury_interface.png" alt="Interface on your browser">
+        </div>
     </section>
 
     <section class="functions">
         <div class="function">
             <img class="function-image">
             <div class="function-desc">
-                <p class="function-desc__title">Drag & Drop</p>
+                <p class="title function-desc__title">Drag & Drop</p>
                 <p class="function-desc__text">
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
                     ut aliquip ex ea commodo consequat.
@@ -97,7 +102,7 @@
     </section>
 
     <section class="template">
-        <h4 class="template-title">Powerfull PSD Template</h4>
+        <h4 class="title template-title">Powerfull PSD Template</h4>
         <p class="template-desc">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -119,7 +124,7 @@
     </section>
 
     <section class="price">
-        <h5 class="price-title">Check our pricing!</h5>
+        <h5 class="title price-title">Check our pricing!</h5>
         <ul class="price-list">
             <li class="price-item">
                 <p class="price-item__title">Bronze plan</p>
@@ -155,6 +160,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a class="btn btn--primary" href="#">Join now</a>
     </section>
+
     <footer class="footer">
         <p class="footer-copyright">© 2016 Merkury All Right Reserved</p>
         <div>
