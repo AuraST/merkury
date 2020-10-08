@@ -14,13 +14,15 @@
             <a class="header-logo">
                 <img class="header-logo__img" src="images/logo.png" alt="Logo company Merkury">
             </a>
-            <nav class="header-nav">
-                <a class="header-nav__link" href="#features">Features</a>
-                <a class="header-nav__link" href="#pricing">Pricing</a>
-                <a class="header-nav__link" href="#blog">Blog</a>
-                <a class="header-nav__link" href="#contact">Contact</a>
-            </nav>
-            <button class="btn btn--primary-outline" type="button">Login</button>
+            <div class="header-nav">
+                <nav class="header-nav__menu menu-header">
+                    <a class="menu-header__link" href="#features">Features</a>
+                    <a class="menu-header__link" href="#pricing">Pricing</a>
+                    <a class="menu-header__link" href="#functions">Functions</a>
+                    <a class="menu-header__link" href="#contact">Contact</a>
+                </nav>
+                <button class="btn btn--primary-outline" type="button">Login</button>
+            </div>
         </header>
         <section class="main">
             <h2 class="title main__title">Grow Your business with Merkury</h2>
@@ -80,9 +82,9 @@
         </div>
     </section>
 
-    <section class="functions">
+    <section class="functions" id="functions">
         <div class="function">
-            <img class="function-image">
+            <img class="function-image" src="images/drag_drop.png">
             <div class="function-desc">
                 <p class="title function-desc__title">Drag & Drop</p>
                 <p class="function-desc__text">
@@ -123,7 +125,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="pricing">
         <h5 class="title price-title">Check our pricing!</h5>
         <ul class="price-list">
             <li class="price-item">
@@ -157,17 +159,17 @@
                 </ul>
             </li>
         </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="text--center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <a class="btn btn--primary" href="#">Join now</a>
     </section>
 
     <footer class="footer">
         <p class="footer-copyright">© 2016 Merkury All Right Reserved</p>
-        <div>
-            <nav class="footer-nav">
-                <a class="footer-nav__link" href="#">Pricing</a>
-                <a class="footer-nav__link" href="#">Blog</a>
-                <a class="footer-nav__link" href="#">Contact</a>
+        <div class="footer-nav">
+            <nav class="footer-nav__menu menu-footer">
+                <a class="menu-footer__link" href="#">Pricing</a>
+                <a class="menu-footer__link" href="#">Blog</a>
+                <a class="menu-footer__link" href="#">Contact</a>
             </nav>
             <ul class="socials">
                 <li class="social">
