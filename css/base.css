@@ -24,6 +24,12 @@ p {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     color: var(--color-default);
+    transition: border-color .5s ease, color .5s ease;
+}
+
+.btn--primary-outline:hover {
+    border-color: var(--color-white);
+    color: var(--color-white);
 }
 
 .btn--primary {
@@ -31,14 +37,25 @@ p {
     padding-right: 3.056rem;
     color: var(--color-white);
     background-color: var(--color-default);
+    transition: box-shadow .5s ease;
+}
+
+.btn--primary:hover {
+    box-shadow: 0 0 20px -3px var(--color-default);
 }
 
 .btn--secondary {
+    position: relative;
     padding-left: 4.444rem;
     padding-right: 4.444rem;
     font-weight: 700;
     color: var(--color-dark);
     border-color: var(--color-light);
+    transition: border-color .5s ease;
+}
+
+.btn--secondary:hover {
+    border-color: var(--color-dark);
 }
 
 .btn--arrow {
@@ -49,6 +66,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: .7;
+    transition: opacity .5s ease;
 }
 
 .btn--arrow-left {
@@ -58,6 +77,11 @@ p {
 .btn--arrow-right {
     background-image: url(../images/arrow_left.png);
     transform: rotate(180deg);
+}
+
+.btn--arrow-left:hover,
+.btn--arrow-right:hover {
+    opacity: 1;
 }
 
 .title {

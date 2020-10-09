@@ -15,3 +15,83 @@
         border-color: var(--color-default);
     }
 }
+
+/* 
+var: --time = длительность анимации (animation-duration),
+     --step = коэффициент для вычисления задержки старта (animation-delay),
+     --opacity-rate = коэффициент для вычисления длительности opacity (animation-duration) 
+*/
+
+/* Плавное появление по горизонтали начиная слева */
+.fade-block__item-gl {
+    opacity: 0;
+    transform: translate3d(-10%, 0, 0);
+    transition: opacity var(--time) ease-in-out,
+                transform var(--time) ease;
+}
+
+/* Плавное появление по горизонтали начиная слева с задержкой */
+.fade-block__item-gl--delay {
+    opacity: 0;
+    transform: translate3d(-10%, 0, 0);
+    transition: opacity var(--time) ease-in-out calc(.7s * var(--step)),
+                transform var(--time) ease;
+}
+
+/* Плавное появление по горизонтали начиная справа */
+.fade-block__item-gr {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
+    transition: opacity var(--time) ease-in-out,
+                transform var(--time) ease;
+}
+
+/* Плавное появление по горизонтали начиная справа с задержкой */
+.fade-block__item-gr--delay {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
+    transition: opacity var(--time) ease-in-out calc(.7s * var(--step)),
+                transform var(--time) ease;
+}
+
+/* Плавное появление по вертикали начиная сверху */
+.fade-block__item-vt {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, -100);
+    transition:
+            opacity var(--time) ease-in-out,
+            transform var(--time) ease-in-out;
+}
+
+/* Плавное появление по вертикали начиная сверху с задержкой */
+.fade-block__item-vt--delay {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, -100);
+    transition:
+            opacity calc(var(--opacity-rate) * var(--time)) ease-in-out calc(.5s * var(--step)),
+            transform var(--time) ease-in-out calc(.5s * var(--step));
+}
+
+/* Плавное появление по вертикали начиная снизу */
+.fade-block__item-vb {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, 100);
+    transition:
+            opacity var(--time) ease-in-out,
+            transform var(--time) ease-in-out;
+}
+
+/* Плавное появление по вертикали начиная снизу с задержкой */
+.fade-block__item-vb--delay {
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 0, 100);
+    transition:
+            opacity calc(var(--opacity-rate) * var(--time)) ease-in-out calc(.5s * var(--step)),
+            transform var(--time) ease-in-out calc(.5s * var(--step));
+}
+
+/* Общий класс, крайнее состояние блока */
+.fade-block__item--within {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
