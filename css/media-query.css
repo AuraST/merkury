@@ -1,0 +1,139 @@
+@media (max-width: 1530px) {
+    
+}
+
+@media (max-width: 1200px) {
+    .features-list {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .info-block {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    :root {
+        --font-size-main: 16px;
+        --width-lg: 100%;
+        --width-md: 100%;
+        --width-sm: 100%;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .top {
+        height: 100%;
+    }
+
+    .top-container {
+        height: 100%;
+        padding-bottom: 40px;
+    }
+
+    .top-screen {
+        display: none;
+    }
+
+    .header-nav__button {
+        display: block;
+    }
+
+    .header-nav__menu {
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+
+    .header-nav {
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100%;
+        padding: 30px;
+        box-shadow: 0 5px 30px 0 rgba(0, 0, 0, .6);
+        background-color: var(--color-white);
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    
+    .menu-header .menu-header__link {
+        display: block;
+        font-size: 2rem;
+        color: var(--color-dark);
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .main__title {
+        white-space: normal;
+        animation: none;
+        border: none;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+
+    .info-block {
+        grid-template-columns: 1fr;
+    }
+
+    .info-block img {
+        position: relative;
+        width: 100%;
+    }
+
+    .function {
+        width: auto;
+        grid-template-columns: 1fr;
+        grid-gap: 1.667rem;
+        justify-content: left;
+        padding: 40px 20px;
+    }
+
+    .function-desc {
+        padding: 0;
+    }
+
+    .template-mockup {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 655px;
+        margin: 0 -20px;
+    }
+
+    .reason-mockup {
+        padding: 20px;
+    }
+
+    .reason-mockup--right {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: right;
+        text-align: right;
+    }
+    
+    .reason-mockup__text {
+        color: var(--color-dark);
+        width: 80%;
+    }
+
+    .template-mockup .reason-mockup__title::after {
+        content: "";
+    }
+
+    .price-list {
+        grid-template-columns: 1fr;
+    }
+}

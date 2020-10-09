@@ -9,6 +9,7 @@
     <link href="css/base.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
+    <link href="css/media-query.css" rel="stylesheet">
     <title>Merkury</title>
 </head>
 <body>
@@ -18,6 +19,7 @@
                 <a class="header-logo" href="/" aria-label="Go to home page">
                     <img class="header-logo__img" src="images/logo.png" alt="Logo company Merkury">
                 </a>
+                <button class="header-nav__button" type="button" aria-label="Открыть меню"></button>
                 <div class="header-nav">
                     <nav class="header-nav__menu menu-header">
                         <a class="menu-header__link" href="#features">Features</a>
@@ -140,11 +142,11 @@
         </div>
     </section>
 
-    <section class="price mb--lg" id="pricing">
+    <section class="price fade-block mb--lg" id="pricing">
         <div class="container mb--sm">
             <h5 class="title price-title">Check our pricing!</h5>
             <ul class="price-list">
-                <li class="price-item">
+                <li class="price-item fade-block__item fade-block__item-gl" style="--time: .6s;">
                     <p class="price-item__title">Bronze plan</p>
                     <p class="price-item__count">$19<span class="price-item__unit">/mon</span></p>
                     <ul class="list">
@@ -154,7 +156,7 @@
                         <li class="uncheck">Lorem ipsum dolor sit am</li>
                     </ul>
                 </li>
-                <li class="price-item">
+                <li class="price-item fade-block__item fade-block__item-gl" style="--time: .9s;">
                     <p class="price-item__title">Silver plan</p>
                     <p class="price-item__count">$49<span class="price-item__unit">/mon</span></p>
                     <ul class="list">
@@ -164,7 +166,7 @@
                         <li class="uncheck">Lorem ipsum dolor sit am</li>
                     </ul>
                 </li>
-                <li class="price-item">
+                <li class="price-item fade-block__item fade-block__item-gl" style="--time: 1.1s;">
                     <p class="price-item__title">Gold plan</p>
                     <p class="price-item__count">$99<span class="price-item__unit">/mon</span></p>
                     <ul class="list">

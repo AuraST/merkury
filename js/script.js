@@ -12,3 +12,24 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    let menuBtn = document.querySelector('.header-nav__button');
+
+    menuBtn.onclick = () => {
+        if (!menuBtn.classList.contains('header-nav__button--close')) {
+            menuBtn.classList.add('header-nav__button--close');
+            document.querySelector('.header-nav').style.display = 'block';
+        } else  {
+            menuBtn.classList.remove('header-nav__button--close');
+            document.querySelector('.header-nav').style.display = 'none';
+        }
+    }
+
+    document.onclick = (e) => {
+        if (!e.target.classList.contains('header-nav__button') && document.documentElement.clientWidth < 991) {
+            menuBtn.classList.remove('header-nav__button--close');
+            document.querySelector('.header-nav').style.display = 'none';
+        }
+    }
+})
