@@ -1,0 +1,131 @@
+body {
+    font-size: var(--font-size-main);
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-gray);
+    overflow-x: hidden;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.btn {
+    padding: 0.722rem;
+    border: 1px solid var(--color-default);
+    border-radius: 50px;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn--primary-outline {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    color: var(--color-default);
+}
+
+.btn--primary {
+    padding-left: 3.056rem;
+    padding-right: 3.056rem;
+    color: var(--color-white);
+    background-color: var(--color-default);
+}
+
+.btn--secondary {
+    padding-left: 4.444rem;
+    padding-right: 4.444rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    border-color: var(--color-light);
+}
+
+.btn--arrow {
+    border: none;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn--arrow-left {
+    background-image: url(../images/arrow_left.png);
+}
+
+.btn--arrow-right {
+    background-image: url(../images/arrow_left.png);
+    transform: rotate(180deg);
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 3.333rem;
+    font-weight: 100;
+    color: var(--color-dark);
+}
+
+.list {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.list > li {
+    position: relative;
+    padding: 5px 0 5px 30px;
+}
+
+.list > li::before {
+    content: "";
+    position: absolute;
+    top: 17%;
+    left: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACxUlEQVRIiZWWW4hOURTHfz6HiTCZDAo1Qi6T4xYaQ81g5BKaCUnyhFweKE8eOO2aJ7cScnlwSwkPHowhuTVJqdFwaKR4IIPBA1Ny24wW63yzv+98t/nX6Vz22v+11tnrv/buUVffSQ70ARYDc4CxQAnwG/gAPAFuAU2+NX+yUWRzMBDYCWwC+sdGU/Ea2Acc9a2xhThYApwCSoFOjfIq0AK8BzxgOFAB1AETdV4IrPateZbLwRbgsHwHrgM7gNZYzKlYCBwAxgMdwFLfmqbIIuGYrgWOaNRCvKgAcnxrJJBpwDlgAHAl9IIoq6SDUcBxfd6qERUM35pvwDrHycXQC4pcB/uBvsAZ4Fh3yJ1MJPMNmvU4YBu6BuXAU+ArUAZ8is3ODglwqG/N28gi9IJq4DbwERgmBmt07HQ3ySXja0Bb6AUVTiZ3gMdahTXiYL6OXY5R5CZvABaIA9WCi4hrbkLLS9Aco8lNXq3kVb41bWk2D/U+IaFK/Q58STOaCVwAyp1vxcDNNPIXsRDgnd5LoirqFTOBGmAVcFfVKuQ3VMEvgUogEzmqdsGvhMq/p6x4mtEeEQ0wSKtCrhlKXgW8itF2YaQ+tYuDR/oyO83oJ7DCcTLVIX8To0xFpb61JLTU0FaRDnFSq+KTDGblIw+9oDewUl8bxcF5XWTpopNjM/73/83APN0H8mEjMESi9635l4Eo7pB20JNAUR6CrAi9QP59vY7vxulFRitiCnDWqYLukJfqekm1XfKtaXAdSB9aDnzW0mxUqRdKPgm4r5qRNrE+GnP3g1b9z+2qgee6LxTHGLtQFnrBQe0Co4EHMte3piOyyLRlygKdAJbp+w/gnm6Z0jXl941QpU/XtZNCkD1kl2+N2CeR61Qh9b5dTxWZlC6Q9iLtZG+WlpFzMaVFyNVP28MYYDAgJwdRv+whzZlOEkkAfwGbgr9915psugAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+}
+
+.list > .uncheck::before {
+    background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAClklEQVRIiaXWXYhVVRQH8N+VOw6KNTQwKmTQUKIpEY6IiBNEH2BJBoEiMfhkEFrozPgioiD4pmlm4sdDqfRSPfRQmQ+GIhEExTgoRiAFgWnlQ44MTllNbO86w7nnzL0zg3847H3WXh97rb3W2rsy0r1DE8zAS3gaC9COf/E7LuErXMB/jVQ0MvAQtuMNPFBarccv2Icj+Ke4WC2xsxofoAOjOIsvMIAbITMPK/AqnsS72Ij1+KGZB5vwXqLjDPpxpbSFeqzCfjyBIbwcYbuHaTnWHhyOXSfFL05CudjIUnyIB/FZeFVn4DEci/nm2NFUcAcbckY+RmvewNuYiZM4OkXlGZLnr4fXC7ElM7AYr2AY20piE6M1xzGCN2OedLUkA68F4QRujqPurQhZJUerBC0p+xttubVzGIwsfCEZeD4WPi2prqETvTkjmfLeOLsUmtsFmUzXs9VIr4TvSqpr6A+lW3O0NH8HffFfrOTvY1xUjUpNsbtVYKrE7kZzijIjmfLR0nZquB5je5ZFLSWWeuFGihoh6xB3q1H+c/EwrjUQOJALS96TRl50xvhbMnAxyr0bH5VYawdajHlmZLRAy7AyxoEUoi/jp6fEVsPP4UFf4UwS7acSN9OxNuanU7PriJabCqYrPLofpNo4FN23K3nwRxBS1rxfqMypIsV+T8jskutFu3EVS3CqwT0xETqik6aq/gSf5w0MRz/6E+tS7EJgsngK30RfG4zLh8J9kLrgcym1Ug/Bj1HFbU2MPIqD0QUex7chO5QxjHcnz8FxrIn/v/B1HNqvEb5HsBzL4uzSQyCl887gH0OzV8UzkevpVTFepSek9pJqZ2+cYQnNDvN8fLPigp+P2fFySNV/OUJTekmMAf8D+HuSpps30xAAAAAASUVORK5CYII=);
+}
+
+.container {
+    width: var(--width-lg);
+    margin: auto;
+    padding: 0 15px;
+}
+
+.container--sm {
+    width: var(--width-sm);
+}
+
+.mb--xl {
+    margin-bottom: var(--size-xl);
+}
+
+.mb--lg {
+    margin-bottom: var(--size-lg);
+}
+
+.mb--md {
+    margin-bottom: var(--size-md);
+}
+
+.mb--sm {
+    margin-bottom: var(--size-sm);
+}
+
+.mlr--auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-block {
+    display: block;
+}
