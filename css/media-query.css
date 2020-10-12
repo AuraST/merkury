@@ -1,20 +1,4 @@
-@media (max-width: 1530px) {
-    
-}
-
-@media (max-width: 1200px) {
-    .features-list {
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .info-block {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-}
-
-@media (max-width: 991px) {
+@media (max-width: 1470px) {
     :root {
         --font-size-main: 16px;
         --width-lg: 100%;
@@ -32,6 +16,13 @@
         padding-right: 20px;
     }
 
+    .info-block {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (max-width: 991px) {
     .top {
         height: 100%;
     }
@@ -79,10 +70,6 @@
         white-space: normal;
         animation: none;
         border: none;
-    }
-
-    .features-list {
-        grid-template-columns: 1fr;
     }
 
     .info-block {
@@ -133,7 +120,7 @@
         content: "";
     }
 
-    .price-list {
-        grid-template-columns: 1fr;
+    .price-item {
+        padding: 2.222rem 1.778rem;
     }
 }

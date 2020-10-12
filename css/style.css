@@ -98,7 +98,7 @@
 /* Блок с преимуществами */
 .features-list {
     display: grid;
-    grid-template-columns: repeat(3, 470px);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 470px));
     grid-template-rows: 1fr;
     grid-gap: 1.667rem;
     justify-content: center;
@@ -143,6 +143,10 @@
 }
 
 /* Блок с информацией про десктопную версию */
+.info {
+    overflow-x: hidden;
+}
+
 .info-block {
     display: grid;
     grid-template-columns: var(--width-sm) 1fr;
@@ -286,7 +290,7 @@
 
 .price-list {
     display: grid;
-    grid-template-columns: repeat(3, 470px);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 470px));
     grid-template-rows: 1fr;
     justify-content: center;
     margin-left: 0;
@@ -296,7 +300,7 @@
 
 .price-item {
     margin: 3.056rem;
-    padding: 40px 50px;
+    padding: 2.222rem 2.778rem;
     box-shadow: 0 0 2.222rem 0.556rem #edeef0;
     transition: box-shadow .5s ease;
     border: 2px solid transparent;
