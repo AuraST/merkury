@@ -1,9 +1,6 @@
 @media (max-width: 1470px) {
     :root {
         --font-size-main: 16px;
-        --width-lg: 100%;
-        --width-md: 100%;
-        --width-sm: 100%;
     }
 
     html {
@@ -11,7 +8,6 @@
     }
 
     .container {
-        width: auto;
         padding-left: 20px;
         padding-right: 20px;
     }

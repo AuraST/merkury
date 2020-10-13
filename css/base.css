@@ -120,13 +120,13 @@ p {
 }
 
 .container {
-    width: var(--width-lg);
+    max-width: var(--width-lg);
     margin: auto;
     padding: 0 15px;
 }
 
 .container--sm {
-    width: var(--width-sm);
+    max-width: var(--width-sm);
 }
 
 .mb--xl {

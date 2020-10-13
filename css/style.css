@@ -224,15 +224,15 @@
 .template-title,
 .template-desc {
     text-align: center;
-    width: var(--width-md);
+    max-width: var(--width-md);
     margin-left: auto;
     margin-right: auto;
 }
 
 .template-mockup {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     height: 720px;
     margin: auto;
     background-image: url(../images/screen_mockup.png);
